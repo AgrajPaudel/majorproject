@@ -1,0 +1,1092 @@
+{
+    "jargons": [
+        {
+            "head": "Income taxes paid",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Loan and advances to bank and financial institutions",
+            "pattern": [
+                [
+
+                ]
+            ]
+        },
+        {
+            "head": "Term Loan",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Total Assets",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Non Banking Assets ( Net of provision)",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Other Information",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Other Operating Expenses",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Repayment of debt securities",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Paid Up Capital",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Current Tax Liabilities",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Cash payment to employees",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Return on Total Net Assets",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Non-Performing Loan to Total Loan",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Margin Type Loan",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Debenture and Bond",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Current tax assets",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Return on Equity",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Total liabilities and equity",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Cost of Funds",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Goodwill and Intangible assets",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Current Tax",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Equity holders of the Bank",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Reserves",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Credit to Deposit Ratio",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Net cash flow from operating activities before tax paid",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Investment securities",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Loan and advances to B/FIs",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Dividend received",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Overdraft Loan /TR Loan /Working Capital Loan",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Profit attributable to:",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Net fee and commission income",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Profit for the period",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Profit from Regular Activities",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Dividends paid",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Market Share Price ",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Effect of exchange rate fluctuations on cash and cash equivalents held",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Cost of Fund",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Market Value Per Share",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Property and equipment",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Interest Expense",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Diluted earnings per share",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Fees, Commission and Discounts",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Profit before income tax",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Others",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Cash and Bank Balance",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Liquidity (CRR)",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Fee and commission expense",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Purchase of intangible assets",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Receipt from the sale of property and equipment",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Retained earnings",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Earning Per Share",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Placement with bank and financial institutions",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Non-controlling interest",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Profit and Loss Account",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Condensed Statement of Comprehensive Income",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Due to Bank and Financial Institutions",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Other Real Estate Loan (Including Land purchase and Plotting)",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Income Tax Liability",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Receipts from other operating activities",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Provision for possible losses",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Net Profit/Loss ",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Base Rate",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Income Generating Commercial Complex Loan",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Total Loan Loss Provision to NPL",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "CASH FLOWS FROM INVESTING ACTIVITIES",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Foreign Currency",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Residential Real Estate Loan",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Depreciation and Amortisation",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "C/D Ratio",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Due from Nepal Rastra Bank",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Loans and advances to customers",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Total liabilities",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Total Loan Loss Provision to Total NPL",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Subordinated Liabilities",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Repayment of subordinated liabilities",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Interest expense",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Net Worth Per share",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Other expense paid",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Staff Expenses",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Money at Call and Short Notice",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Net cash used in investing activities",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Other Operating Income",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Borrowings",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Operating Profit",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Other receipt/payment",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Other Assets",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Ratios",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Fees and other income received",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Extra Ordinary Income/Expenses",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Income tax expense",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Non Performing Loan (NPL) to Total Loan",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Derivative financial instruments",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Net Interest Income ( 3.1-3.2)",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Receipt from issue of debt securities",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Foreign Exchange Gain/Loss",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Interest paid",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Operating expense",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Other operating income",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Net interest income",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Interest Rate Spread",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Receipt from the sale of investment properties",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Other assets",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Due to Nepal Rastra Bank",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Total Operating Income",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Receipt from issue of shares",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Operating Profit\"",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Operating Profit before provision",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Reserve and Surplus",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Interest received",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Placement with Bank and Financial Institutions",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Non Operating Income/Expenses",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Capital Fund to RWA",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Deposits from customers",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Total equity",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Total Assets ",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Deferred Tax",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Commission and fees paid",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Net operating income",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Other trading assets",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "(Increase)/Decrease in operating assets",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Other operating expenses",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Provision for Staff Bonus",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Investment in subsidiaries",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Purchase of property and equipment",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Receipts from sale of investment securities",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Return on Equity ",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Total Assets Per Share",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Deferred tax liabilities",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Total Comprehensive Income",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Provision for Income Tax",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Deposit from customers",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Other Liabilities",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Profit before Bonus and Taxes",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "CASH FLOWS FROM FINANCING ACTIVITIES",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Due to bank and financial institutions",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Cash and cash equivalent",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Interest Income",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Purchase of investment securities",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Net Interest Spread",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Receipt from issue of subordinated liabilities",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Domestic Currency",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Credit to Deposit Ratio ",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Provisions",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Receipt from the sale of intangible assets",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Loans and Advances ",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Write back of provision for possible loss",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Purchase of investment properties",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Total operating income",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Net increase in cash and cash equivalents",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Deferred tax assets",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Borrowing",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Other liabilities",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Increase/(Decrease) in operating liabilities",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Business Complex and Residential Apartment Construction Loan",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Total Capital and Liabilities ( 1.1 to 1.7)",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Investments",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Net cash from financing activities",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Deposits",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Return on Total Assets ",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Fixed Assets",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Impairment charge/(reversal) for loans and other losses",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Cash and cash equivalents at",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Average Yield",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Price Earning Ratio",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Cost of Deposit",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Non-operating expense",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Investment property",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Basic earnings per share",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Other Comprehensive Income",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Net cash flow from operating activities",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Net interest, fee and commission income",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Personnel expenses",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Real Estate Loan",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Share capital",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Share premium",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Net trading income",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Debt securities issued",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Investment in associates",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Non-operating income",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Interest income",
+            "pattern": [
+                []
+            ]
+        },
+        {
+            "head": "Operating cash flows before changes in operating assets and liabilities",
+            "pattern": [
+                []
+            ]
+        }
+    ]
+}
