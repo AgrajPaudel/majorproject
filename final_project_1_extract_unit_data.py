@@ -1,5 +1,5 @@
 import pandas as pd
-
+import json
 # Set display options to show all rows and columns without truncation
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
@@ -12,9 +12,12 @@ def display_bank_quarter_data(datafile, bank, quarter):
     try:
         # Use loc to access data for the specified bank and quarter
         result = df.loc[(slice(None), bank), quarter]
-        print(result)
+        # Convert each item to a JSON-style entry
+        result_json = [{'variable': str(variable), 'value': str(value)} for (variable, _), value in result.items()]
+        return result_json
     except KeyError:
         print(f"Data not found for bank: {bank} and quarter: {quarter}")
+
 
 
 def display_all_quarters_and_banks_for_variable(datafile, variable):
@@ -46,9 +49,18 @@ def display_all_banks_for_quarter_and_variable(datafile, quarter, variable):
     try:
         # Use loc to access data for all banks for the specified quarter and variable
         result = df.loc[(variable, slice(None)), quarter]
-        print(result)
+
+        # Convert the result to a JSON-like format
+        result_json = [{"bank": bank, "value": str(value)} for (variable, bank), value in result.items()]
+
+        # Print and return the JSON-like result
+
+        return result_json
+
     except KeyError:
         print(f"Data not found for quarter: {quarter} and variable: {variable}")
+
+
 
 def display_all_quarters_for_bank_and_variable(datafile, bank, variable):
     # Read the data cube CSV file
@@ -57,20 +69,13 @@ def display_all_quarters_for_bank_and_variable(datafile, bank, variable):
     try:
         # Use loc to access data for all quarters for the specified bank and variable
         result = df.loc[(variable, bank), :]
-        print(result)
+
+        # Convert the result to a JSON-like format
+        result_json = [{"quarter": idx, "value": str(value)} for idx, value in result.items()]
+
+        return result_json
+
     except KeyError:
         print(f"Data not found for bank: {bank} and variable: {variable}")
 
-
-# Example: Call the function with the data cube file and specific bank and quarter
-data_cube_file = '3d data/data_cube.csv'
-bank_name = 'Citizen Bank'
-variable_name = 'total assets'
-quarter_name = 'Q1 2070'
-
-# Call functions
-display_value_for_variable_bank_quarter(data_cube_file, variable_name, bank_name, quarter_name)
-display_all_banks_for_quarter_and_variable(data_cube_file, quarter_name, variable_name)
-display_all_quarters_for_bank_and_variable(data_cube_file, bank_name, variable_name)
-display_bank_quarter_data(data_cube_file, bank_name, quarter_name)
-display_all_quarters_and_banks_for_variable(data_cube_file,variable_name)
+#print(display_all_banks_for_quarter_and_variable(datafile='D:/python tesseract/3d data/data_cube.csv',variable='reserves',quarter='Q1 2073'))

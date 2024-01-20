@@ -23,9 +23,4 @@ def create_data_cube(folder_path):
 
     return data_cube
 
-# Example: Call the function with the folder path where your CSV files are located
-folder_path = '3d data'
-data_cube = create_data_cube(folder_path)
 
-# Save the data cube to a single CSV file
-data_cube.to_csv(os.path.join(folder_path, 'data_cube.csv'), index=True)

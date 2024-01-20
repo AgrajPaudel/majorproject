@@ -1,7 +1,8 @@
 import spacy
 
 # Load the English language model
-nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load('D:/python tesseract/venv/Lib/site-packages/en_core_web_sm/en_core_web_sm-3.7.0')
+
 def make_singular(input_string):
 
 
@@ -25,8 +26,5 @@ def make_singular(input_string):
     modified_string = ' '.join(processed_tokens)
 
     return modified_string
-y=make_singular('Personnel expenses')
-print(y.lower())
-x=make_singular('Cost of Funds')
-x=x.replace(" ","")
-print(x.lower())
+
+

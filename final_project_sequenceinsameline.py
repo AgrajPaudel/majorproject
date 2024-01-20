@@ -34,5 +34,3 @@ def dash_searcher(string):
     else:
         return False
 
-x=find_sequence('2.0 Operating Profit 	(876.204)	526,368	180,400	')
-print(x)

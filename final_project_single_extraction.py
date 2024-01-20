@@ -8,7 +8,7 @@ import pandas as pd
 import spacy
 
 # Load the English language model
-nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load('D:/python tesseract/venv/Lib/site-packages/en_core_web_sm/en_core_web_sm-3.7.0')
 
 
 def extract_text_and_store_csv(txt_file, csv_folder, pdf_path):

@@ -54,6 +54,32 @@ def display_all_quarters_for_bank_and_variable(datafile, bank, variable):
     except KeyError:
         print(f"Data not found for bank: {bank} and variable: {variable}")
 
+def get_values_for_variable_bank_quarter(datafile, variable, bank, quarter):
+    # Read the data cube CSV file
+    df = pd.read_csv(datafile, index_col=[0, 'Bank'])
+
+    try:
+        # Use loc to access data for the specified variable, bank, and quarter
+        result = df.loc[(variable, bank), quarter]
+
+        # Handle numeric values directly
+        if pd.api.types.is_numeric_dtype(result):
+            return result
+
+        # Remove empty data
+        result = np.nan if pd.isna(result) or str(result).strip() == '' else result
+
+        # Convert string data to numeric
+        result = pd.to_numeric(result, errors='coerce')
+
+        # Return the numeric value or NaN if conversion fails
+        return result
+    except KeyError:
+        print(f"Data not found for variable: {variable}, bank: {bank}, and quarter: {quarter}")
+        return np.nan
+
+
+
 
 def display_all_banks_for_quarter_and_variable(datafile, quarter, variable):
     # Read the data cube CSV file
@@ -128,8 +154,5 @@ def calculate_z_scores(datafile):
     # Save the final DataFrame to a new CSV file
     df.to_csv('D:/python tesseract/z score/3d_zscore_table.csv')
 
-# Example: Call the function with the data cube file
-#data_cube_file = 'D:/python tesseract/3d data/data_cube.csv'
 
-# Call the function to calculate and print z-scores
-#calculate_z_scores(data_cube_file)
+

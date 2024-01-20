@@ -23,8 +23,4 @@ def process_pdfs_in_directory(directory_path, output_folder):
             extract_text_from_pdf(filepath, output_folder,name)
 
 
-# Example usage:
-input_directory = "D:/python tesseract/z test input"
-output_directory = "D:/python tesseract/z outp"
 
-process_pdfs_in_directory(input_directory, output_directory)

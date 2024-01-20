@@ -49,85 +49,83 @@ def risk_analysis(datafile, quarter, bank):
 
 
 
-    extraction=extract_z_scores(variable_and_z_scores,'capital fund to rwa')
-    capital_fund_to_rwa=separate_string(extraction)
-    print(capital_fund_to_rwa)
+
+
 
     extraction = extract_z_scores(variable_and_z_scores, 'non performing loan to total loan')
     non_performing_loan_to_total_loan = separate_string(extraction)
-    print(non_performing_loan_to_total_loan)
+
 
     extraction = extract_z_scores(variable_and_z_scores, 'total loan loss provision to npl')
     total_loan_loss_provision_to_npl = separate_string(extraction)
-    print(total_loan_loss_provision_to_npl)
+
 
     extraction = extract_z_scores(variable_and_z_scores, 'cost of fund')
     cost_of_fund = separate_string(extraction)
-    print(cost_of_fund)
+
 
     extraction = extract_z_scores(variable_and_z_scores, 'base rate')
     base_rate = separate_string(extraction)
-    print(base_rate)
+
 
     extraction = extract_z_scores(variable_and_z_scores, 'net interest spread')
     net_interest_spread = separate_string(extraction)
-    print(net_interest_spread)
+
 
     extraction = extract_z_scores(variable_and_z_scores, 'return on equity')
     return_on_equity = separate_string(extraction)
-    print(return_on_equity)
+
 
     extraction = extract_z_scores(variable_and_z_scores, 'return on total assets')
     return_on_total_assets = separate_string(extraction)
-    print(return_on_total_assets)
+
 
     extraction = extract_z_scores(variable_and_z_scores, 'credit to deposit ratio')
     credit_to_deposit_ratio = separate_string(extraction)
-    print(credit_to_deposit_ratio)
+
+
+
+
 
     extraction = extract_z_scores(variable_and_z_scores, 'capital fund to rwa')
     capital_fund_to_rwa = separate_string(extraction)
-    print(capital_fund_to_rwa)
 
-    extraction = extract_z_scores(variable_and_z_scores, 'capital fund to rwa')
-    capital_fund_to_rwa = separate_string(extraction)
-    print(capital_fund_to_rwa)
 
     extraction = extract_z_scores(variable_and_z_scores, 'loan to deposit ratio')
     loan_to_deposit_ratio = separate_string(extraction)
-    print(loan_to_deposit_ratio)
+
 
     extraction = extract_z_scores(variable_and_z_scores, 'income tax portion of operating profit')
     income_tax_portion_of_operating_profit = separate_string(extraction)
-    print(income_tax_portion_of_operating_profit)
+
 
     extraction = extract_z_scores(variable_and_z_scores, 'net profit margin')
     net_profit_margin = separate_string(extraction)
-    print(net_profit_margin)
+
 
     extraction = extract_z_scores(variable_and_z_scores, 'staff expense to income ratio')
     staff_expense_to_income_ratio = separate_string(extraction)
-    print(staff_expense_to_income_ratio)
+
 
     extraction = extract_z_scores(variable_and_z_scores, 'commission to operating income')
     commission_to_operating_income = separate_string(extraction)
-    print(commission_to_operating_income)
+
 
     extraction = extract_z_scores(variable_and_z_scores, 'return on investment')
     return_on_investment = separate_string(extraction)
-    print(return_on_investment)
+
 
     extraction = extract_z_scores(variable_and_z_scores, 'interest income margin')
     interest_income_margin = separate_string(extraction)
-    print(interest_income_margin)
+
 
     extraction = extract_z_scores(variable_and_z_scores, 'interest income to assets ratio')
     interest_income_to_assets_ratio = separate_string(extraction)
-    print(interest_income_to_assets_ratio)
+
 
     extraction = extract_z_scores(variable_and_z_scores, 'debt ratio')
     debt_ratio = separate_string(extraction)
-    print(debt_ratio)
+
     risk_array=[]
     i=0
     while i<3:
@@ -151,13 +149,44 @@ def risk_analysis(datafile, quarter, bank):
                              staff_expense_to_income_ratio=staff_expense_to_income_ratio[i],
                              loan_to_deposit_ratio=loan_to_deposit_ratio[i],
                              )
-        print(risk)
+
         risk_array.append(risk)
         i=i+1
-    print(risk_array)
+
+    return risk_array
 
 
-datafile = 'D:/python tesseract/z score/3d_zscore_table.csv'
-quarter = 'Q1 2079'
-bank = 'Citizen Bank'
-result = risk_analysis(datafile=datafile, quarter=quarter, bank=bank)
+def risk_analysis_from_input(datafile, quarter):
+    df = pd.read_csv(datafile, index_col=0)
+
+    # Define the required variables
+    required_variables = [
+        "capital fund to rwa",
+        "non performing loan to total loan",
+        "total loan loss provision to npl",
+        "cost of fund",
+        "base rate",
+        "net interest spread",
+        "return on equity",
+        "return on total assets",
+        "credit to deposit ratio",
+        "debt ratio",
+        "return on investment",
+        "net profit margin",
+        "income tax portion of operating profit",
+        "loan to deposit ratio",
+    ]
+
+    for variable in required_variables:
+        values_for_quarter = df.loc[variable, quarter].split()
+        quarter_values = [float(value) for value in values_for_quarter[1:]]
+
+        # Print the values for the specified quarter
+        print(f"{variable} ({quarter}): {quarter_values}")
+
+
+# Example usage
+#risk_analysis_from_input(datafile='D:/python tesseract/z outp/z output/z_scores.csv', quarter='Q1 2074')
+
+
+

@@ -54,4 +54,3 @@ def ocr_for_pdf(pdf_path, output_folder,filename):
       #  json.dump(result_data, json_output_file, indent=2)
 
    # print(f'OCR for PDF done. Text stored in {txt_file}, JSON stored in {json_file}')
-

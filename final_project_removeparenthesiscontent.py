@@ -29,6 +29,3 @@ def remove_parentheses_and_contents(input_string):
 
     return result.strip()
 
-
-x=remove_parentheses_and_contents('aaabaa (3.1-3.2)')
-print(x)

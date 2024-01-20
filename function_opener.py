@@ -3,7 +3,7 @@ import os
 from final_project_pdftotxt import extract_text_from_pdf
 from final_project_delete_directory_content import delete_directory_contents
 from final_project_csv_merger import combine_csv_files
-from remove_percent_and_comma import  clean_csv_files_in_folder
+from final_project_remove_percent_and_comma import  clean_csv_files_in_folder
 from final_project_fill_the_gaps import  add_and_store_in_folder
 #from final_project_calculator import calculate_values_and_update_csv
 
@@ -36,9 +36,9 @@ def multiple_pdf_extraction(input_folder, access_token_folder, merged_csv_name):
 
         # Call extract_text_from_pdf for each file
         extract_text_from_pdf(file_path, access_token_folder, f"{filename_without_extension}.txt")
+
     combine_csv_files(input_folder=access_token_folder,merged_csv_name=merged_csv_name)
     clean_csv_files_in_folder(folder_path=access_token_folder)
     add_and_store_in_folder(access_token_folder)
 
-#single_pdf_extraction(file_path='Q1 2073.jpg',access_token_folder='D:/python tesseract/z output',filename='test.txt')
-multiple_pdf_extraction(input_folder='D:/python tesseract/z outp',access_token_folder="D:/python tesseract/z output",merged_csv_name='merged_file.csv')
+
