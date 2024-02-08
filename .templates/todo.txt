@@ -1,0 +1,16 @@
+first, define the range for all the variables and risks and outliers and predict risks based on them
+either predict using given ratios or your own made up ratio
+risk weights, every variables have weights and then classify based on them weights on either risky or not, good variables give positive, bad give -ve, bad is risk while good reduces risks.
+only ratios no solid values
+risks calculated based on z scores
+all time health vs that instance health vs all time that bank health
+for extraction, a dictionary check using spacy from that dictionary, if match then extract to the file. other process same.
+
+
+
+take values for loans bfi, loans customers, ect as well and them calculate for special cases
+within this week code the end of that
+final output=txt file with -------------- for page separator
+csv file too
+and them that data is malleable to be operated on against our fixed data
+works on bulk i/p
