@@ -28,3 +28,4 @@ def make_singular(input_string):
     return modified_string
 
 
+#print(make_singular('total assets'))

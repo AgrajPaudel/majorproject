@@ -39,9 +39,9 @@ def extract_text_and_store_csv(txt_file, csv_folder, pdf_path):
 
         # Process right sides outside the loop
         right_sides_processed = [make_singular(
-            remove_parentheses_and_contents(right_side.strip("*-").replace("&", "and").replace(" ", ""))) for
+            remove_parentheses_and_contents(right_side.strip("*-").replace("&", "and").replace(" ", " "))) for
             right_side in right_side_list]
-        print(right_sides_processed)
+
 
         # Iterate through the lines of the text file
         with open(txt_file, 'r', encoding='utf-8') as infile:
@@ -52,12 +52,13 @@ def extract_text_and_store_csv(txt_file, csv_folder, pdf_path):
                 if line_num in matched_line_indices:
                     continue
                 line_str = remove_parentheses_and_contents(line.replace("&", "and"))
+                line_str=line_str.lower()
                 line_str = line_str.replace('-', '')
                 line_str = remove_numeric_prefix(line_str)
-                line_str = line_str.replace(" ", "")
+                line_str = line_str.replace(" ", " ")
                 line_str = line_str.strip()
                 line_str_processed = make_singular(line_str)
-                print(line_str_processed.lower())
+
 
                 # Check if the processed left side matches any processed right side in the list
                 if any(right_side_processed.lower() == line_str_processed.lower() for right_side_processed in
@@ -69,33 +70,37 @@ def extract_text_and_store_csv(txt_file, csv_folder, pdf_path):
                     try:
                         # Get the line below
                         line_below = lines[line_num + 1].strip()
-                        line_below_processed = make_singular(
-                            remove_parentheses_and_contents(line_below.replace("&", "and").replace(" ", "")))
+                        line_below_processed = line_below.strip()
 
                         while not line_below:
                             line_num += 1
                             line_below = lines[line_num].strip()
-                            print('bwlooooo', line_below)
+
 
                         # Check if the line below contains alphabets
                         if any(char.isalpha() for char in line_below_processed):
                             print("Line below contains alphabets. Ignored.")
-                        elif any(char.isdigit() or char == '-' for char in line_below_processed):
+                        elif any(char.isdigit() or char == '-' or char == ' ' for char in line_below_processed):
                             # Check if the variable is already present in the DataFrame
                             existing_entry_indices = df.index[
                                 df["Particulars"].str.lower() == left_side_processed.lower()].tolist()
                             if existing_entry_indices:
                                 # Update existing entries
                                 for existing_entry_index in existing_entry_indices:
-                                    line_below_processed=line_below_processed.replace('%','')
-                                    line_below_processed=line_below_processed.replace(',','')
+                                    line_below_processed = line_below_processed.replace('%', '')
+                                    line_below_processed = line_below_processed.replace(',', '')
+                                    # Take the first part of the string before space
+                                    line_below_processed = line_below_processed.split()[0]
                                     df.at[existing_entry_index, filename] = line_below_processed
                             else:
                                 # Append the data to the DataFrame
+                                # Take the first part of the string before space
+                                line_below_processed = line_below_processed.split()[0]
                                 df = df._append({"Particulars": left_side_original, filename: line_below_processed},
-                                               ignore_index=True)
-                                print('line num===', line_below_processed)
+                                                ignore_index=True)
+
                                 break
+
 
                     except IndexError:
                         print("Line below not found.")
@@ -103,15 +108,15 @@ def extract_text_and_store_csv(txt_file, csv_folder, pdf_path):
     # Save the DataFrame to a CSV file in the specified folder
     df.to_csv(csv_file_path, index=False)
 
-    # Print list of variables not found
+
     not_found_variables = set(dictionary.variables.keys()) - set(df["Particulars"])
-    print("Variables not found:", not_found_variables)
+
 
     # Check if any variables were found
     if not df.empty:
         print("Variables found. No need to execute OCR.")
     else:
-        print("No variables found. Executing OCR.")
+
         ocr_for_pdf(pdf_path=pdf_path, output_folder=csv_folder, filename=txt_file)
         if_ocr=True
 

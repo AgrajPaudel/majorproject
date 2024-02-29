@@ -5,6 +5,7 @@ from final_project_extract_data_from_input import (
     display_all_quarters_for_variable,
     get_values_for_quarter
 )
+from final_project_interpolated import interpolate_nan
 from final_project_1_extract_unit_data import (
     display_all_banks_for_quarter_and_variable,
     display_bank_quarter_data,
@@ -12,7 +13,7 @@ from final_project_1_extract_unit_data import (
 )
 from final_project_outlier_finding import get_variable_info
 from final_project_outlier_finding_from_input import get_variable_info as get_variable_info_from_input
-from final_project_risk_analysis import risk_analysis
+from final_project_risk_analysis import risk_analysis,risk_analysis_from_inputs
 from final_project_knn import get_column_data
 from final_project_extract_rows import get_csv_row_headers
 import os
@@ -45,7 +46,7 @@ def extract_row_index(access_token,filename):
             json.dump(values, result_file)
         return values
     except Exception as e:
-        error_message = f'Error in outlier_from_input: {str(e)}'
+        error_message = f'Error in extract_row_index: {str(e)}'
 
         # Save the error message as a JSON file
         error_file_path = os.path.join(output_folder, 'row_headers.json')
@@ -81,7 +82,7 @@ def work_on_input(access_token):
         return values
 
     except Exception as e:
-        error_message = f'Error in outlier_from_input: {str(e)}'
+        error_message = f'Error in work_on_input: {str(e)}'
 
         # Save the error message as a JSON file
         error_file_path = os.path.join(output_folder, 'input_work.json')
@@ -104,7 +105,7 @@ def quarter_extraction_from_newfile(access_token, quarter, filename):
             json.dump(values, result_file)
         return values
     except Exception as e:
-        error_message = f'Error in outlier_from_input: {str(e)}'
+        error_message = f'Error in extract_quarter_from_newfile: {str(e)}'
 
         # Save the error message as a JSON file
         error_file_path = os.path.join(output_folder, 'quarter_from_input.json')
@@ -126,7 +127,7 @@ def variable_extraction_from_newfile(access_token, variable, filename):
             json.dump(values, result_file)
         return values
     except Exception as e:
-        error_message = f'Error in outlier_from_input: {str(e)}'
+        error_message = f'Error in variable_from_new_file: {str(e)}'
 
         # Save the error message as a JSON file
         error_file_path = os.path.join(output_folder, 'variable_from_input.json')
@@ -140,13 +141,15 @@ def bank_and_variable_extraction_from_oldfiles(access_token,bank, variable):
     input_folder = os.path.join(path, access_token)
     output_folder = os.path.join(input_folder, 'z output')
     try:
-        values = display_all_quarters_for_bank_and_variable(variable=variable, bank=bank, datafile=datafile)
+        value = display_all_quarters_for_bank_and_variable(variable=variable, bank=bank, datafile=datafile)
+        values=interpolate_nan(value)
+        print(values)
         result_file_path = os.path.join(output_folder, 'bank_and_variable_existing.json')
         with open(result_file_path, 'w') as result_file:
             json.dump(values, result_file)
         return values
     except Exception as e:
-        error_message = f'Error in outlier_from_input: {str(e)}'
+        error_message = f'Error in bank_and_variable_extraction_from_oldfiles: {str(e)}'
 
         # Save the error message as a JSON file
         error_file_path = os.path.join(output_folder, 'bank_and_variable_existing.json')
@@ -166,7 +169,7 @@ def variable_and_quarter_extraction_from_oldfiles(access_token,quarter, variable
             json.dump(values, result_file)
         return values
     except Exception as e:
-        error_message = f'Error in outlier_from_input: {str(e)}'
+        error_message = f'Error in variable_and_quarter_extraction_from_oldfiles: {str(e)}'
 
         # Save the error message as a JSON file
         error_file_path = os.path.join(output_folder, 'variable_and_quarter_existing.json')
@@ -186,7 +189,7 @@ def bank_and_quarter_extraction_from_oldfiles(access_token,bank, quarter):
             json.dump(values, result_file)
         return values
     except Exception as e:
-        error_message = f'Error in outlier_from_input: {str(e)}'
+        error_message = f'Error in bank_and_quarter_extraction_from_oldfiles: {str(e)}'
 
         # Save the error message as a JSON file
         error_file_path = os.path.join(output_folder, 'bank_and_quarter_existing.json')
@@ -206,7 +209,7 @@ def outlier_from_existing(access_token,quarter, bank, filepath):
             json.dump(values,result_file)
         return values
     except Exception as e:
-        error_message = f'Error in outlier_from_input: {str(e)}'
+        error_message = f'Error in outlier_from_existing: {str(e)}'
 
         # Save the error message as a JSON file
         error_file_path = os.path.join(output_folder, 'outlier_from_existing.json')
@@ -262,6 +265,27 @@ def risk_analysis_existing(quarter, bank, filepath, access_token):
         return json.dumps({'error': error_message})
 
 
+def risk_analysis_from_input(quarter, filepath, access_token):
+    try:
+        values = risk_analysis_from_inputs(datafile=filepath, quarter=quarter)
+        payload = {f'{i + 1}th risk': value for i, value in enumerate(values)}
+
+        # Save the result as a JSON file
+        result_file_path = os.path.join(path, access_token, 'z output', 'risk_analysis_input.json')
+        with open(result_file_path, 'w') as result_file:
+            json.dump(payload, result_file)
+
+        return json.dumps(payload)
+    except Exception as e:
+        error_message = f'Error in risk_analysis_input: {str(e)}'
+
+        # Save the error message as a JSON file
+        error_file_path = os.path.join(path, access_token, 'z output', 'risk_analysis_input.json')
+        with open(error_file_path, 'w') as error_file:
+            json.dump({'error': error_message}, error_file)
+
+        return json.dumps({'error': error_message})
+
 # knn
 def knn_output(access_token):
     input_folder = os.path.join(path, access_token)
@@ -277,7 +301,7 @@ def knn_output(access_token):
 
         return values
     except Exception as e:
-        error_message = f'Error in outlier_from_input: {str(e)}'
+        error_message = f'Error in knn output: {str(e)}'
 
         # Save the error message as a JSON file
         error_file_path = os.path.join(output_folder, 'knn_output.json')
@@ -388,6 +412,17 @@ if __name__ == "__main__":
 
             try:
                 values=risk_analysis_existing(access_token=access_token,quarter=args_dict['quarter'],bank=args_dict['bank'],filepath=args_dict['filepath'])
+
+
+            except Exception as e:
+                values=  str(f'Error: {str(e)}')
+
+        elif function_name == 'risk_analysis_input':
+            args_dict['quarter'] = extract_value(json_input, 'quarter')
+            args_dict['filepath'] = extract_value(json_input, 'filepath')
+
+            try:
+                values=risk_analysis_from_input(access_token=access_token,quarter=args_dict['quarter'],filepath=args_dict['filepath'])
 
 
             except Exception as e:

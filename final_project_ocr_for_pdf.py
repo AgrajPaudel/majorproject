@@ -16,12 +16,17 @@ def ocr_space_file(filename, overlay=False, api_key='helloworld', language='eng'
                     Defaults to 'en'.
     :return: Result in JSON format.
     """
+    filepath,raw_filetype=os.path.splitext(filename)
+    filetype=raw_filetype[1:]
+    filetype=filetype.upper()
+    print(filetype)
 
     payload = {'isOverlayRequired': overlay,
                'apikey': api_key,
                'language': language,
                'OCREngine':'2',
                'isTable': True,
+               'filetype': filetype
                }
     with open(filename, 'rb') as f:
         r = requests.post('https://api.ocr.space/parse/image',
@@ -41,7 +46,7 @@ def ocr_for_pdf(pdf_path, output_folder,filename):
     result_data = json.loads(result_json)
 
     # Extract text from the parsed JSON result (modify this part based on the actual structure of the OCR result)
-    extracted_text = result_data.get('ParsedResults', [{}])[0].get('ParsedText', '')
+    extracted_text = '\n'.join(item.get('ParsedText', '') for item in result_data.get('ParsedResults', [{}]))
 
     # Write the extracted text to the specified text file (test.txt)
     txt_file = filename

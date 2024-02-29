@@ -62,11 +62,13 @@ def add_and_store_in_folder(folder_path):
 
             for ratio_name, numerator_col, denominator_col in ratio_calculations:
                 numerator = pd.to_numeric(df.loc[numerator_col], errors='coerce').fillna(0)
-                denominator = pd.to_numeric(df.loc[denominator_col], errors='coerce').fillna(
-                    1)  # Replace 0 with 1 to avoid division by zero
+                denominator = pd.to_numeric(df.loc[denominator_col], errors='coerce').fillna(0)  # Replace 0 with 1 to avoid division by zero
 
                 # Calculate ratio and handle division by zero for each column
-                ratio = (numerator / denominator) * 100
+                if denominator is not 0:
+                    ratio = (numerator / denominator) * 100
+                else:
+                    ratio=0
 
                 # Apply the calculation for each column separately
                 for col in ratio.index:

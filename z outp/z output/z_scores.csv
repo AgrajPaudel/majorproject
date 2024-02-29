@@ -1,37 +1,37 @@
-,Q1 2072,Q2 2068
-reserves,-0.050092 0.391233,-0.062960 2.018175
-debenture and bond,0.470245 0.433617,0.140501 6.787360
+,Q1 2072,Q3 2072
+reserves,-0.313820 0.391233,-1.014628 -1.652444
+debenture and bond,0.470245 0.433617,
 borrowings,,
-deposits,-0.047814 0.009480,-0.045163 3.349818
-income tax liability,-0.120125 -0.987135,-0.120125 -1.003212
-other liabilities,,
-total assets,-0.047893 -0.016393,-0.046466 3.397057
-loan and advancements,-0.048345 0.057450,-0.052299 2.076376
-interest income,-0.032977 0.420112,-0.029900 25.608895
-interest expense,-0.045105 -0.052122,-0.033637 14.479625
-net interest income,-0.010946 0.382952,-0.024008 15.667297
-net fee and commission income,-0.011304 0.697422,-0.015848 17.049936
-total operating income,-0.008101 0.425771,-0.022852 12.978435
-staff expenses,-0.021282 0.049368,-0.032405 18.344747
-operating profit,0.003645 1.043421,-0.018748 11.487413
-non operating income expense,-0.073718 -0.272660,-0.137785 -0.573857
-profit for the period,-0.005062 0.548892,-0.024981 11.979552
-capital fund to rwa,0.246026 1.231724,-0.040499 -0.264721
-non performing loan to total loan,-0.075207 -1.052746,-0.070197 -1.289952
-total loan loss provision to npl,0.295834 1.157946,0.031617 7.133146
-cost of fund,-1.612007 -1.357966,-0.930098 -3.319723
-base rate,-0.556908 0.306797,0.725062 nan
-net interest spread,,0.489294 1.489406
+deposits,-0.547884 0.009480,-1.356735 -3.058117
+income tax liability,-0.476521 -0.987135,-0.476521 -0.898531
+other liabilities,,-0.837325 -0.690858
+total assets,-0.594152 -0.016393,-1.305796 -3.001334
+loan and advancements,-0.609943 0.057450,-1.264824 -3.356644
+interest income,0.010445 0.420112,-0.232088 -3.763283
+interest expense,-0.043973 -0.052122,-0.157203 -3.660972
+net interest income,,-1.360350 -2.420322
+net fee and commission income,0.794343 0.697422,-1.132433 -1.446546
+total operating income,,-0.948695 -1.379272
+staff expenses,0.538412 0.049368,-0.340498 0.016072
+operating profit,,-1.199529 -2.045915
+non operating income expense,-0.092653 -0.272660,-0.243866 -0.516097
+profit for the period,,-1.202981 -2.258061
+capital fund to rwa,0.246026 1.231724,0.579522 1.782292
+non performing loan to total loan,,
+total loan loss provision to npl,0.295834 1.157946,
+cost of fund,-1.612007 -1.357966,0.310224 3.371575
+base rate,-0.556908 0.306797,
+net interest spread,,
 market share price,,
-return on equity,0.636893 0.683863,0.721240 1.305795
-return on total assets,0.259440 0.717433,-0.360580 0.496498
-credit to deposit ratio,,-0.074605 0.012738
+return on equity,0.636893 0.683863,
+return on total assets,0.259440 0.717433,
+credit to deposit ratio,,-0.277933 -2.729606
 debt ratio,,
-interest income to assets ratio,0.147301 0.610554,0.140051 6.939913
-interest income margin,0.734269 1.350584,0.373303 9.782176
-return on investment,0.740837 1.074318,0.314895 7.816396
-commission to operating income,-0.011749 0.813926,0.085419 1.124490
-staff expense to income ratio,-0.286218 -0.069623,-0.357141 0.010719
-net profit margin,0.085887 0.238976,-0.036433 0.937948
+interest income to assets ratio,0.147301 0.610554,-0.040557 1.840506
+interest income margin,,-0.195026 -1.917100
+return on investment,,-0.515694 -5.087518
+commission to operating income,,-0.547726 -2.426545
+staff expense to income ratio,,2.774208 3.261584
+net profit margin,,-1.742626 -10.856389
 income tax portion of operating profit,,
-loan to deposit ratio,-0.042974 0.007683,-0.062542 -2.830179
+loan to deposit ratio,-0.042974 0.007683,

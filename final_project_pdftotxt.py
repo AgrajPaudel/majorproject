@@ -51,3 +51,4 @@ def extract_text_from_pdf(pdf_path: str, output_folder: str, filename: str, max_
 
 
 
+#extract_text_from_pdf(pdf_path='D:/python tesseract/z outp/Q1 2072.pdf',output_folder='D:/python tesseract/z outp/z output',filename='Q1 2072.pdf')

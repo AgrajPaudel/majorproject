@@ -23,7 +23,7 @@ def display_all_quarters_and_banks_for_variable(datafile, variable):
         values = pd.to_numeric(values, errors='coerce')
         values = values[~np.isnan(values)]
 
-        print(result)
+
         return values
     except KeyError:
         print(f"Data not found for variable: {variable}")
@@ -121,8 +121,7 @@ def calculate_z_scores(datafile):
         for bank in banks:
             for quarter in quarters:
                 try:
-                    print(f"Variable: {variable}, Bank: {bank}, Quarter: {quarter}")
-                    print(f"Old Line: {df.loc[variable].loc[bank, quarter]}")
+
                     value_to_check = df.loc[variable].loc[bank, quarter]
 
                     # Check if the value is empty, '-', or non-numeric
@@ -142,7 +141,7 @@ def calculate_z_scores(datafile):
                     second_z_score = calculate_z_score(array=array_of_one_quarter, value=pd.to_numeric(value_to_check))
                     third_z_score = calculate_z_score(array=array_of_one_bank, value=pd.to_numeric(value_to_check))
 
-                    print(f"Z-Scores: {first_z_score}, {second_z_score}, {third_z_score}")
+
                     # Store z-scores in the DataFrame
                     df.at[(variable, bank), quarter] = f"{first_z_score:.6f} {second_z_score:.6f} {third_z_score:.6f}"
 
