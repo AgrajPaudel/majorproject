@@ -61,7 +61,7 @@ def extract_text_and_store_csv(txt_file, csv_folder, pdf_path):
 
 
                 # Check if the processed left side matches any processed right side in the list
-                if any(right_side_processed.lower() == line_str_processed.lower() for right_side_processed in
+                if any(right_side_processed.lower().replace(" ",'') == line_str_processed.lower().replace(" ",'') for right_side_processed in
                        right_sides_processed):
 
                     # Update the set of matched line indices
@@ -80,6 +80,27 @@ def extract_text_and_store_csv(txt_file, csv_folder, pdf_path):
                         # Check if the line below contains alphabets
                         if any(char.isalpha() for char in line_below_processed):
                             print("Line below contains alphabets. Ignored.")
+                            if any(char.isdigit() or char == '-' or char == ' ' for char in lines[line_num+2].strip()):
+                                new_line=lines[line_num+2].strip()
+                                existing_entry_indices = df.index[
+                                    df["Particulars"].str.lower() == left_side_processed.lower()].tolist()
+                                if existing_entry_indices:
+                                    # Update existing entries
+                                    for existing_entry_index in existing_entry_indices:
+                                        new_line = new_line.replace('%', '')
+                                        new_line = new_line.replace(',', '')
+                                        # Take the first part of the string before space
+                                        new_line = new_line.split()[0]
+                                        df.at[existing_entry_index, filename] = new_line
+                                else:
+                                    # Append the data to the DataFrame
+                                    # Take the first part of the string before space
+                                    new_line = new_line.split()[0]
+                                    df = df._append({"Particulars": left_side_original, filename: new_line},
+                                                    ignore_index=True)
+
+                                    break
+
                         elif any(char.isdigit() or char == '-' or char == ' ' for char in line_below_processed):
                             # Check if the variable is already present in the DataFrame
                             existing_entry_indices = df.index[

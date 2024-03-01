@@ -4,7 +4,7 @@ debenture and bond,0.470245 0.433617,
 borrowings,,
 deposits,-0.547884 0.009480,-1.356735 -3.058117
 income tax liability,-0.476521 -0.987135,-0.476521 -0.898531
-other liabilities,,-0.837325 -0.690858
+other liabilities,-0.590149 -0.643611,-0.837325 -0.690858
 total assets,-0.594152 -0.016393,-1.305796 -3.001334
 loan and advancements,-0.609943 0.057450,-1.264824 -3.356644
 interest income,0.010445 0.420112,-0.232088 -3.763283
@@ -17,15 +17,15 @@ operating profit,1.128840 1.043421,-1.199529 -2.045915
 non operating income expense,-0.092653 -0.272660,-0.243866 -0.516097
 profit for the period,0.840720 0.548892,-1.202981 -2.258061
 capital fund to rwa,0.246026 1.231724,0.579522 1.782292
-non performing loan to total loan,,
+non performing loan to total loan,-0.075207 -1.052746,
 total loan loss provision to npl,0.295834 1.157946,
 cost of fund,-1.612007 -1.357966,0.310224 3.371575
 base rate,-0.556908 0.306797,
-net interest spread,,
+net interest spread,1.779863 2.141996,
 market share price,,
 return on equity,0.636893 0.683863,
 return on total assets,0.259440 0.717433,
-credit to deposit ratio,,-0.277933 -2.729606
+credit to deposit ratio,-0.012516 1.645081,-0.277933 -2.729606
 debt ratio,,
 interest income to assets ratio,0.147301 0.610554,-0.040557 1.840506
 interest income margin,0.734269 1.350584,-0.195026 -1.917100
