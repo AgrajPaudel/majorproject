@@ -13,4 +13,4 @@ def remove_numeric_prefix(line):
 #print(remove_numeric_prefix('1.23 hjghvkjl  10231531'))   # Output: ' hjghvkjl  10231531'
 #print(remove_numeric_prefix('A1.23 sadsadasda'))  # Output: ' sadsadasda'
 #print(remove_numeric_prefix('a adsasda'))         # Output: ' adsasda'
-#print(remove_numeric_prefix('A asdsadasda'))      # Output: ' asdsadasda'
+#print(remove_numeric_prefix('A. asdsadasda'))      # Output: ' asdsadasda'

@@ -55,7 +55,7 @@ def extract_text_and_store_csv(txt_file, csv_folder, pdf_path):
                 line_str=line_str.lower()
                 line_str = line_str.replace('-', '')
                 line_str = remove_numeric_prefix(line_str)
-                line_str = line_str.replace(" ", " ")
+                line_str = line_str.replace(".", " ")
                 line_str = line_str.strip()
                 line_str_processed = make_singular(line_str)
 

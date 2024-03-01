@@ -292,7 +292,7 @@ def knn_output(access_token):
     output_folder = os.path.join(input_folder, 'z output')
 
     try:
-        values = get_column_data(datafile=datafile, filename=os.path.join(output_folder, 'merged_file.csv'))
+        values = get_column_data(knnfile='D:/python tesseract/knn_model_data.pkl', filename=os.path.join(output_folder, 'merged_file.csv'))
 
         # Save the result as a JSON file
         result_file_path = os.path.join(output_folder, 'knn_output.json')

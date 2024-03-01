@@ -1,31 +1,20 @@
 import pandas as pd
+from final_project_create_model_using_knn import get_nearest_datasets
 import numpy as np
 from final_project_4d_z_score import get_values_for_variable_bank_quarter
-# Convert the output to JSON format
-import json
-
-def calculate_rms_distance(array1, array2):
-    # Calculate the squared differences for valid values (not NaN)
-    squared_diff = np.square(array1 - array2)
-    # Mask NaN values in either array
-    valid_mask = ~np.isnan(array1) & ~np.isnan(array2)
-    # Calculate the mean of squared differences for valid values
-    mean_squared_diff = np.nanmean(squared_diff[valid_mask])
-    # Take the square root to get the rms distance
-    rms_distance = np.sqrt(mean_squared_diff)
-    return rms_distance
+from final_project_create_model_using_knn import load_knn_model
 
 
-def get_column_data(filename, datafile):
+
+
+def get_column_data(filename, knnfile):
     result_dict = {}  # Initialize the dictionary to store the results
-
+    knn_model, all_values, all_indices = load_knn_model(knnfile)
     # Read the CSV file
     df = pd.read_csv(filename, index_col=0)
-    df_file = pd.read_csv(datafile, index_col=[0, 'Bank'])
-    # Get the list of unique variables, banks, and quarters
-    variables = df_file.index.get_level_values(0).unique()
-    banks = df_file.index.get_level_values(1).unique()
-    quarters = df_file.columns
+
+
+
 
     # Define the required variables
     required_variables = [
@@ -56,42 +45,16 @@ def get_column_data(filename, datafile):
                 numeric_value = pd.to_numeric(value, errors='coerce')
                 column_array[var_index] = numeric_value
 
-        # Initialize variables to track the 3 lowest distances
-        lowest_distances = [float('inf')] * 3
-        lowest_quarters = [''] * 3
-        lowest_banks = [''] * 3
+        nearest_dataset=get_nearest_datasets(knn_model, np.array(column_array), all_values, all_indices)
 
-        result_dict[column] = {}  # Initialize the result dictionary for the current column
-
-        for bank in banks:
-            for quarter in quarters:
-                value_of_variables = []
-                for variable in required_variables:
-                    value_of_variables.append(get_values_for_variable_bank_quarter(datafile=datafile,
-                                                                                  variable=variable,
-                                                                                  quarter=quarter,
-                                                                                  bank=bank))
-
-                # Calculate the rms distance
-                rms_distance = calculate_rms_distance(np.array(column_array), np.array(value_of_variables))
-                # Check if the distance is smaller than any in the list
-                for i in range(3):
-                    if rms_distance < lowest_distances[i]:
-                        lowest_distances.insert(i, rms_distance)
-                        lowest_distances = lowest_distances[:3]
-                        lowest_quarters.insert(i, quarter)
-                        lowest_quarters = lowest_quarters[:3]
-                        lowest_banks.insert(i, bank)
-                        lowest_banks = lowest_banks[:3]
-                        break
-
-        # Add the 3 lowest distances with their quarters and banks to the result dictionary
-        result_dict[column] = {f"{i+1}st data": {
-            'Distance': lowest_distances[i],
-            'Quarter': lowest_quarters[i],
-            'Bank': lowest_banks[i]
-        } for i in range(3)}
-
+        # Format the nearest datasets as per the desired JSON structure
+        result_dict[column] = {}
+        for i, (dataset, distance) in enumerate(nearest_dataset, start=1):
+            result_dict[column][f"{i}st data"] = {
+                'bank': dataset[0],
+                'quarter': dataset[1],
+                'distance': distance
+            }
     return result_dict
 
 

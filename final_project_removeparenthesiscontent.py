@@ -29,3 +29,4 @@ def remove_parentheses_and_contents(input_string):
 
     return result.strip()
 
+#print(remove_parentheses_and_contents('Credit to Deposit Ratio (Calculated as per NRB '))

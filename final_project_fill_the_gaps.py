@@ -23,6 +23,10 @@ def add_and_store_in_folder(folder_path):
                                                                  errors='coerce').fillna(0)
             df.loc['loans and advances to customers'] = pd.to_numeric(df.loc['loans and advances to customers'],
                                                                       errors='coerce').fillna(0)
+            df.loc['interest income'] = pd.to_numeric(df.loc['interest income'],
+                                                                      errors='coerce').fillna(0)
+            df.loc['interest expense'] = pd.to_numeric(df.loc['interest expense'],
+                                                                      errors='coerce').fillna(0)
 
             # Add the numeric values and store the result in the target row
             df.loc['loan and advancements'] += df.loc['loan and advances to b/fis'] + df.loc[
@@ -44,6 +48,9 @@ def add_and_store_in_folder(folder_path):
                                                                errors='coerce').fillna(0)
             df.loc['income tax liability'] += df.loc['current tax liabilities'] + df.loc['deferred tax liabilities'] + \
                                               df.loc['income tax liability']
+
+            if pd.isna(str(df.loc['net interest income'])):
+                df.loc['net interest income']=df.loc['interest income']-df.loc['interest expense']
 
             # Ratios calculation and handling division by zero
 

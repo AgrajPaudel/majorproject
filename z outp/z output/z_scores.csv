@@ -9,13 +9,13 @@ total assets,-0.594152 -0.016393,-1.305796 -3.001334
 loan and advancements,-0.609943 0.057450,-1.264824 -3.356644
 interest income,0.010445 0.420112,-0.232088 -3.763283
 interest expense,-0.043973 -0.052122,-0.157203 -3.660972
-net interest income,,-1.360350 -2.420322
+net interest income,0.852769 0.382952,-1.360350 -2.420322
 net fee and commission income,0.794343 0.697422,-1.132433 -1.446546
-total operating income,,-0.948695 -1.379272
+total operating income,0.972865 0.425771,-0.948695 -1.379272
 staff expenses,0.538412 0.049368,-0.340498 0.016072
-operating profit,,-1.199529 -2.045915
+operating profit,1.128840 1.043421,-1.199529 -2.045915
 non operating income expense,-0.092653 -0.272660,-0.243866 -0.516097
-profit for the period,,-1.202981 -2.258061
+profit for the period,0.840720 0.548892,-1.202981 -2.258061
 capital fund to rwa,0.246026 1.231724,0.579522 1.782292
 non performing loan to total loan,,
 total loan loss provision to npl,0.295834 1.157946,
@@ -28,10 +28,10 @@ return on total assets,0.259440 0.717433,
 credit to deposit ratio,,-0.277933 -2.729606
 debt ratio,,
 interest income to assets ratio,0.147301 0.610554,-0.040557 1.840506
-interest income margin,,-0.195026 -1.917100
-return on investment,,-0.515694 -5.087518
-commission to operating income,,-0.547726 -2.426545
-staff expense to income ratio,,2.774208 3.261584
-net profit margin,,-1.742626 -10.856389
+interest income margin,0.734269 1.350584,-0.195026 -1.917100
+return on investment,0.740837 1.074318,-0.515694 -5.087518
+commission to operating income,-0.011749 0.813926,-0.547726 -2.426545
+staff expense to income ratio,-0.286218 -0.069623,2.774208 3.261584
+net profit margin,0.085887 0.238976,-1.742626 -10.856389
 income tax portion of operating profit,,
 loan to deposit ratio,-0.042974 0.007683,
