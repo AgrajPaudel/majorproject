@@ -41,5 +41,5 @@ def multiple_pdf_extraction(input_folder, access_token_folder, merged_csv_name):
     combine_csv_files(input_folder=access_token_folder,merged_csv_name=merged_csv_name)
     clean_csv_files_in_folder(folder_path=access_token_folder)
     add_and_store_in_folder(access_token_folder)
-    #manage_denomination(folder_path=access_token_folder)
+    manage_denomination(folder_path=access_token_folder)
 
