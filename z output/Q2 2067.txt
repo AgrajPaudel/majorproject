@@ -1,0 +1,467 @@
+  1
+Total Capital and Liabilities (1.1 to 1.7)
+20,180,351 
+20,522,475 
+18,604,989 
+ 1.1
+Paid Up Capital
+1,306,800 
+1,306,016 
+1,186,099 
+ 1.2
+Reserve and Surplus
+498,566 
+ 479,743 
+520,673 
+ 1.3
+Debenture and Bond
+400,000 
+ 400,000 
+400,000 
+ 1.4
+Borrowings
+ 490,900 
+ 429,740 
+      650,000 
+ 1.5
+Deposits (a+b)
+ 16,784,422 
+17,432,253 
+ 14,715,675 
+ 
+a.Domestic Currency
+ 16,276,295 
+ 16,907,384 
+   14,529,291 
+ 
+b.Foreign Currency
+ 508,128 
+     524,869 
+186,384 
+ 1.6
+Income Tax Liability
+- 
+ -
+ 26,187 
+ 1.7
+Other Liabilities
+699,663 
+ 474,723 
+ 1,106,355 
+  2
+Total Assets (2.1 to 2.7)
+20,180,351 
+ 20,522,475 
+  18,604,989 
+ 2.1
+Cash & Bank Balance
+ 2,011,112 
+ 2,723,829 
+ 1,267,827 
+ 2.2
+Money at Call and Short Notice
+277,000 
+   120,000 
+688,667 
+ 2.3
+Investments
+2,259,677 
+   2,296,873 
+1,547,005 
+ 2.4
+Loans and Advances (a+b+c+d+e)
+14,855,630 
+ 14,765,912 
+  14,451,764 
+ 
+a.Real Estate Loan
+4,475,560
+  4,738,369
+5,079,394 
+    1.Residential Real Estate loan
+1,171,521
+1,138,357
+1,148,687
+    2.Business Complex & Residential Apartment 
+   Construction Loan
+490,449
+507,561
+464,112
+   3.Income generating Commercial Complex Loan
+-
+-
+-
+ 
+    4.Other Real Estate Loan
+   (Including Land purchase & plotting)
+2,813,591 
+  3,092,450 
+  3,466,550
+ 
+b.Margin Type Loan
+329,880 
+  369,177 
+ 411,820 
+ 
+c.Term Loan
+2,226,001 
+  2,271,846 
+  2,128,084 
+ 
+d.Overdraft Loan/TR Loan/WC Loan
+7,223,155 
+   6,859,375 
+   5,635,538 
+ 
+e.Others
+601,034 
+ 527,145 
+    1,196,974 
+ 2.5
+Fixed Assets
+293,860 
+ 285,638 
+   250,294 
+ 2.6
+Non Banking Assets
+- 
+- 
+- 
+ 2.7
+Other Assets
+483,072 
+ 330,222 
+ 399,433
+ 
+   
+  3
+ 3.1
+Interest Income 
+  495,643 
+1,871,066 
+ 399,790 
+ 3.2
+Interest Expenses
+ 397,438 
+ 1,188,918 
+  231,686 
+ 
+A. Net Interest Income (3.1-3.2)
+  98,206 
+682,148 
+ 168,104  
+ 3.3
+Fees, Commission and Discount
+ 26,701 
+ 100,337 
+ 23,625 
+ 3.4
+Other Operating Income
+ 23,846 
+ 41,614 
+  5,584 
+ 3.5
+Foreign Exchange Gain/ Loss (Net)
+ 9,212 
+ 37,925 
+ 8,245 
+ 
+B. Total Operating Income (A.+3.3+3.4+3.5)
+  157,964 
+ 862,024 
+ 205,558 
+ 3.6
+Staff Expenses
+ 39,965 
+ 143,278 
+ 44,193 
+ 3.7
+Other Operating Expenses
+ 56,458 
+ 217,606 
+ 41,647 
+ 
+C. Operating Profit Before Provision (B.- 3.6-3.7)
+  61,542 
+ 501,140 
+ 119,718 
+ 3.8
+Provision for Possible Losses
+  32,057 
+  (1,747)
+1,149 
+ 
+D. Operating Profit (C-3.8)
+   29,484 
+ 502,887 
+ 118,569 
+ 3.9
+Non Operating Income/Expenses (Net)
+ 82 
+ 699 
+ (340)
+ 3.10 Write Back of Provision for Possible Loss
+- 
+- 
+- 
+ 
+E. Profit from Regular Activities (D+3.9+3.10)
+  29,566 
+  503,586 
+   118,228 
+ 3.11 Extraordinary Income/Expenses (Net)
+-   
+     (352)
+- 
+ 
+F. Profit before Bonus and Taxes ( E. + 3.11)
+  29,566 
+ 503,234 
+ 118,228 
+ 3.12 Provision for Staff Bonus
+  2,688 
+    45,749 
+  10,748 
+ 3.13 Provision for Tax
+   8,063 
+  140,943 
+  32,244 
+ 
+G. Net Profit/Loss (F.-3.12-3.13)
+      18,815 
+   316,542 
+75,236 
+  4
+Ratios
+ 4.1
+Capital Fund To RWA
+11.87%
+12.34%
+12.30%
+ 4.2
+Non Performing Loan (NPL) to Total Loan
+1.18%
+0.50%
+0.61%
+ 4.3
+Total Loan Loss Provision to Total NPL
+130.51%
+265.09%
+227.40%
+ 4.4
+Cost of Fund (annualized - LCY)
+9.22%
+7.50%
+5.73%
+ 4.5
+Credit to Deposit Ratio (as per NRB directives)
+83.51%
+80.12%
+90.33%
+Additional Information (year to date annualized fig.)
+ 
+Total Yield (LCY)
+10.83%
+10.80%
+9.10%
+ 
+Spread (LCY)
+1.61%
+3.30%
+3.37%
+ 
+Return on Assets (ROA)
+0.36%
+1.59%
+1.60%
+ 
+Return on Equity (ROE)
+4.09%
+17.79%
+17.93%
+  1
+Total Capital and Liabilities (1.1 to 1.7)
+20,180,351 
+20,522,475 
+18,604,989 
+ 1.5
+Deposits (a+b)
+ 
+ 
+ 
+ 
+  2
+Total Assets (2.1 to 2.7)
+20,180,351 
+ 20,522,475 
+  18,604,989 
+   
+A. Net Interest Income (3.1-3.2)
+  98,206 
+682,148 
+ 168,104  
+ 
+B. Total Operating Income (A.+3.3+3.4+3.5)
+  157,964 
+ 862,024 
+ 205,558 
+ 
+C. Operating Profit Before Provision (B.- 3.6-3.7)
+  61,542 
+ 501,140 
+ 119,718 
+ 
+D. Operating Profit (C-3.8)
+   29,484 
+ 502,887 
+ 118,569 
+ 
+E. Profit from Regular Activities (D+3.9+3.10)
+  29,566 
+  503,586 
+   118,228 
+ 
+F. Profit before Bonus and Taxes ( E. + 3.11)
+  29,566 
+ 503,234 
+ 118,228 
+ 
+G. Net Profit/Loss (F.-3.12-3.13)
+      18,815 
+   316,542 
+75,236 
+  4
+Ratios
+Additional Information
+Note: Figures regrouped as & where necessary
+Above figures may vary with the audited figures if modified by the external auditors or regulators
+Publication of Information as Required by Securities Registration and Issuance Regulation 2065 (Related to Sub Rule 
+(2) of Rule 22)
+1. Major Financial Indicators (annualized fig.) 
+1. Earnings Per Share - Npr. 5.65
+2. Market Value Per Share – Npr. 352          
+3. Price Earnings Ratio (P/E ratio) – 62.29 times
+4. Net Worth Per Share – Npr. 138        
+5. Return to Total Assets (ROA) – 0.36%
+6. Liquidity (CRR) -5.52%
+2.  Management Analysis:
+Under the review period, the bank has strengthened its capital base and deposit and worked to a l l e v i a t e  i t s  
+real state exposure. The bank was sufficiently liquid throughout the period. Decline in profit has been observed in 
+the quarter. Nevertheless, bank will offset the observed decline in profit in the following months by increasing its 
+lending in SME & other productive sector & increasing fees base income by bringing innovative products in the 
+market.
+3. Details Regarding Legal Actions
+a. Case filed by or to Kumari Bank Ltd. during the quarter. - None
+b. Case filed by or against the promoter or director of Kumari Bank Ltd. regarding disobedience of 
+prevailing law or commission of criminal offence. - None
+c. Case filed against any Promoter or Director of Kumari Bank Ltd. regarding commission of financial   
+crime. - None
+4. Analysis of Share Transaction of Organized Institutions
+a. Management’s view on share transactions of Kumari Bank Ltd. at Securities Market :
+Factors like demand and supply of shares, performance of the bank, dividend policy, decision to 
+distrbute bonus and right shares, initial public offering by new banks, government policies, new rules   
+and regulations imposed by regulatory bodies, economic performance play major role in determining   
+the price of shares in the market.               
+b. Maximum, Minimum, and Closing price of shares including total transaction and transacted days 
+ 
+during the quarter 
+Max. Price - Rs. 460   Min. Price- Rs. 340   Closing Price- Rs. 352    Total Transaction -298    Transacted    
+Day-54 days
+5.Problems and Challenges
+Internal Challenges
+a. Retention of competent and qualified employees.
+b. Increasing cost of operation on account of inflation.
+c. Increasing pressure on spread.
+External Challenges
+a. Competition & limited market.
+b. Lower economic growth.
+Strategy to Overcome Problems & Challenges
+a. Diversification into new areas and services.
+b. Training and Development of employees for increased capacity development.
+c. Adopting a proactive internal culture which rewards cost control and increases productivity.
+d. Continuous reengineering of internal work processes to meet external challenges.
+6. Corporate Governance
+In order to increase the standard of corporate governance, following actions has been initiated by the bank:
+a. The Board of Directors of the bank is the topmost body responsible and accountable to ensure that the 
+ 
+bank has embraced superior standard of corporate governance. Further, various sub-committees of the   
+Board including the Audit Committee continuously review the workings of various areas of the Bank and    
+provide direction and support where necessary.
+b. Clear demarcation has been made in the Bank between various conflicting areas of the Bank like Credit,    
+Risk and Operations, with each unit being headed by senior personnel directly accountable to the CEO.
+c. Management Committee (MANCO), chaired by the CEO and comprising of officers directly reporting to the    
+CEO, meets on a weekly basis to assess the performance of the Bank and take key decisions. Similarly,    
+committees like Asset Liability Committee, Operations Committee etc meet at regular intervals to critically    
+review performance and initiate proactive actions.
+7. Declaration by CEO
+I hereby declare that the data and information provided in this report is true, complete and factual. No attempt 
+has been made to misguide the investors. I personally take the responsibility and
+ 
+accountability regarding the truthfulness of the information provided in the report till the date 17 October 2010.
+Publication of Information as Required by Securities Registration and Issuance Regulation 2065 (Related to Sub Rule 
+(2) of Rule 22)
+1. Major Financial Indicators 
+ 
+2.  Management Analysis:
+3. Details Regarding Legal Actions
+4. Analysis of Share Transaction of Organized Institutions
+5.Problems and Challenges
+6. Corporate Governance
+7. Declaration by CEO
+Kumari Bank Limited
+Unaudited Financial Results (Quarterly)
+As at First Quarter (17-October-2010) of the Fiscal Year 2010/2011
+Kumari Bank Limited
+Unaudited Financial Results (Quarterly)
+As at First Quarter (17-October-2010) of the Fiscal Year 2010/2011
+Upto 
+This Quarter
+Upto 
+This Quarter
+Upto
+Previous Quarter
+Upto
+Previous Quarter
+Up to 
+Corresponding
+Previous 
+Year Quarter 
+Up to 
+Corresponding
+Previous 
+Year Quarter 
+Rs ‘000
+Rs ‘000
+S.N.   Particulars
+S.N.   Particulars
+31.06.2067 /
+17.10. 2010
+This Quarter 
+Ending 
+31.06.2067 /
+17.10. 2010
+This Quarter 
+Ending 
+32.03.2067 /
+ 16 .07. 2010  
+Previous Quarter 
+Ending (audited) 
+32.03.2067 /
+ 16 .07. 2010  
+Previous Quarter 
+Ending (audited) 
+31 .06. 2066/
+ 17.10. 2009
+ Corresponding
+ Previous Year 
+Quarter Ending 
+31 .06. 2066/
+ 17.10. 2009
+ Corresponding
+ Previous Year 
+Quarter Ending 
+Profit and Loss Account
+Profit and Loss Account
+b/af/ dfu{, kf]=a=g+= @!!@*, 6]lnkmf]gM $@@!#!!, $@@^^@(, ofS;M  ))(&&–!–$@@^^$$ www.kumaribank.com.np, SWIFT: KMBLNPKA
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

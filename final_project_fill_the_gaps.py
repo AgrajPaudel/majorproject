@@ -38,7 +38,7 @@ def add_and_store_in_folder(folder_path):
             df.loc['non operating income'] = pd.to_numeric(df.loc['non operating income'], errors='coerce').fillna(0)
             df.loc['non operating expense'] = pd.to_numeric(df.loc['non operating expense'], errors='coerce').fillna(0)
             df.loc['non operating income expense'] += df.loc['non operating income'] - df.loc[
-                'non operating expense'] + df.loc['non operating income expense']
+                'non operating expense']
 
             # Income tax liability addition
             df.loc['income tax liability'] = pd.to_numeric(df.loc['income tax liability'], errors='coerce').fillna(0)
@@ -46,7 +46,8 @@ def add_and_store_in_folder(folder_path):
                                                               errors='coerce').fillna(0)
             df.loc['deferred tax liabilities'] = pd.to_numeric(df.loc['deferred tax liabilities'],
                                                                errors='coerce').fillna(0)
-            df.loc['income tax liability'] += df.loc['current tax liabilities'] + df.loc['deferred tax liabilities'] + \
+
+            df.loc['income tax liability'] += df.loc['deferred tax liabilities'] + \
                                               df.loc['income tax liability']
 
             if pd.isna(str(df.loc['net interest income'])):

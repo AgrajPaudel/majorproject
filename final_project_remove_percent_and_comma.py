@@ -1,11 +1,17 @@
 import os
 import csv
 
+
 def clean_data(value):
-    # Function to clean data fields of single quotes and percent signs
-    cleaned_value = value.replace(",", "").replace("%", "")
-    cleaned_value= str(cleaned_value).replace('(',"").replace(')',"")
+    # Function to clean data fields of single quotes, percent signs, and remove alphabetic characters
+    cleaned_value = value.replace(",", "").replace("%", "").replace("(", "").replace(")", "")
+
+    # Check if the cleaned value contains alphabetic characters
+    if any(char.isalpha() for char in cleaned_value) or value=='-':
+        return ''  # If alphabetic characters are found, return '0'
+
     return cleaned_value
+
 
 def process_csv_file(file_path):
     # Function to process a CSV file

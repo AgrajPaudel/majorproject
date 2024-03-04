@@ -54,6 +54,7 @@ def extract_text_and_store_csv(txt_file, csv_folder, pdf_path):
                 line_str = remove_parentheses_and_contents(line.replace("&", "and"))
                 line_str=line_str.lower()
                 line_str = line_str.replace('-', '')
+                line_str=line_str.replace('(%)','')
                 line_str = remove_numeric_prefix(line_str)
                 line_str = line_str.replace(".", " ")
                 line_str = line_str.strip()

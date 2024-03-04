@@ -1,5 +1,5 @@
 import os
-
+from final_project_denomination import manage_denomination
 from final_project_pdftotxt import extract_text_from_pdf
 from final_project_delete_directory_content import delete_directory_contents
 from final_project_csv_merger import combine_csv_files
@@ -37,8 +37,9 @@ def multiple_pdf_extraction(input_folder, access_token_folder, merged_csv_name):
         # Call extract_text_from_pdf for each file
         extract_text_from_pdf(file_path, access_token_folder, f"{filename_without_extension}.txt")
 
+    #
     combine_csv_files(input_folder=access_token_folder,merged_csv_name=merged_csv_name)
     clean_csv_files_in_folder(folder_path=access_token_folder)
     add_and_store_in_folder(access_token_folder)
-
+    #manage_denomination(folder_path=access_token_folder)
 

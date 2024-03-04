@@ -9,6 +9,17 @@ import pandas as pd
 from final_project_number_sequence_comma_dot import convert_numerical_sequence
 from final_project_sequenceinsameline import find_sequence
 from final_project_remove_forenumber import remove_numeric_prefix
+import re
+
+def remove_non_numeric_from_end(line):
+    # Define a regex pattern to match non-numeric characters at the end of the line
+    pattern = r'[^\d]+$'
+    # Search for the pattern in the line
+    match = re.search(pattern, line)
+    if match:
+        # If a match is found, remove the non-numeric characters from the end
+        line = line[:match.start()]
+    return line
 
 
 def extract_from_ocr_to_csv(pdf_path, output_folder, txtfile_name):
@@ -55,8 +66,8 @@ def extract_from_ocr_to_csv(pdf_path, output_folder, txtfile_name):
                 # Skip lines that have already been matched
                 if line_num in matched_line_indices:
                     continue
-
-                line_str = remove_parentheses_and_contents(line.replace("&", "and"))
+                line_str = remove_non_numeric_from_end(line)
+                line_str = remove_parentheses_and_contents(line_str.replace("&", "and"))
                 line_str = line_str.replace('*', '')
                 line_str = line_str.replace(':', '')
                 line_str = line_str.replace('%', '')
@@ -70,19 +81,21 @@ def extract_from_ocr_to_csv(pdf_path, output_folder, txtfile_name):
                 line_str = line_str.replace(")", "")
                 line_str = line_str.strip()
 
-                line_str_processed = make_singular(line_str)
+
+                line_str_processed = make_singular(line_str.lower())
+                line_str_processed = line_str_processed.replace("/", "")
                 print(line_str_processed.lower())
                 # Check if the processed left side matches any processed right side in the list
-                if any(right_side_processed.lower() == line_str_processed.lower() for right_side_processed in
+                if any(right_side_processed.lower().replace("/","") == line_str_processed.lower() for right_side_processed in
                        right_sides_processed):
-                    print(line_str_processed.lower(), 'is given as ....')
+
                     # Update the set of matched line indices
                     matched_line_indices.add(line_num)
 
                     try:
                         check = remove_numbers_and_symbols(original_line)
                         check = remove_parentheses_and_contents(check)
-                        print('original line=', check)
+
                         check = check.strip()
                         content = find_content_after_string(txtfile_name, check)
                         sequence = find_sequence(content)

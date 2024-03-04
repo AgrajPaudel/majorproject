@@ -1,0 +1,333 @@
+soard das tafaes	
+
+KUMARI BANK LIMITED	
+
+serfer	
+
+Kumari Bank Limited	
+
+Disclosure Under Basel II as at 15 Jul 2013	
+
+Capital Structure and Capital Adequacy	
+
+Tier I Capital and breakdown of its components	
+
+Particular	Amount	
+
+Paid Up Equity Share Capital	1,603,800,000	
+
+Irredeemable Non- cumulative preference share	
+
+Share premium	4,438,289	
+
+Proposed Bonus Equity Share	-	
+
+Statutory General Reserves	340,792,815	
+
+Retained Earnings	14,196,807	
+
+Un-audited current period profit ( after all provision	
+
+including tax)	291,548,147	
+
+Capital Redemption Reserve	400,000,000	
+
+Capital Adjustment Reserve	
+
+Dividend Equalization Reserves	
+
+Other free Reserve	
+
+Deferred Tax Fund	2,020,925	
+
+Total Tier 1 Capital	2,656,796,984	
+
+Tier II Capital and breakdown of its components	
+
+Particular	Amount	
+
+Cumulative and/or Reedemable Preference Share	
+
+b	Subordinated term debt	
+
+Hybrid Capital Instuments	
+
+d	General Loan Loss provision	193,387,330	
+
+e	Exchange Equalisation Reserve	11,796,503	
+
+Investment Adjustment Reserve	30,000	
+
+Assets Revaluation Reserve	
+
+Other Reserve	
+
+Total Tier Il Capital	205,213,832	
+
+Total Capital Fund (Tier 1 and Tier II)	2,862,010,816	
+
+Deductions from Capital:	
+
+The bank does not hold any amount as stipulated in the Framework that qualifies for	
+
+deduction from its Core Capital.	
+
+Total Qualifying Capital	
+
+Particular	Amount	
+
+Tier I Capital	2,656,796,984	
+
+Tier II Capital	205,213,832	
+
+Total Capital Fund	2,862,010,816	
+
+Risk Exposures	
+
+Risk weighted exposures under each 11 categories of Credit Risk:	
+
+S. No. Particular	Amount	
+
+
+Claims on government and central bank	
+
+Claims on other official entities	32920391	
+
+Claims on banks	
+
+Claims on Corporate and securities firms	12,004,022,414	
+
+Regulatory Retail Portfolio	2,016,323,476	
+
+Claims secured by residential properties	1,063,615,057	
+
+Claims secured by Commercial real estate	1,025,128,078	
+
+Past due claims	848,433,302	
+
+High Risk claims	1,595,363,083	
+
+Other Assets	561,684,396	
+
+Off Balance Sheet Exposures	1,422,139,160	
+
+Total	20,920,249,560	
+
+Risk Weighted Exposures for Credit Risk, Market Risk and Operational Risk	
+
+S. No.	Particular	Amount	
+
+1	Risk Weighted Exposure for Credit Risk	20,920,249,560	
+
+2	Risk Weighted Exposure for Operational Risk	1,412,217,679	
+
+3	Risk Weighted Exposure for Market Risk	177,556,925	
+
+Total Risk Weighted Exposures	22,510,024,164	
+
+% of Total Deposit due to Insufficient Liquid Assets	
+
+Addition to RWE as per supervisiory review (3%)	675.300.725	
+
+Add: 2% Capital Charge according to New Capital Ac	218,700,000	
+
+Total Risk Weighted Exposures	23,404,024,889	
+
+Total Risk Weighted Exposure Calculation Table	
+
+S. No.	Particular	Amount	
+
+Risk Weighted Exposure for Credit Risk	20,920,249,560	
+
+2 Risk Weighted Exposure for Operational Risk	1,412,217,679	
+
+3 Risk Weighted Exposure for Market Risk	177,556,925	
+
+4 Total Risk Weighted Exposures	22,510,024,164	
+
+% of Total Deposit due to Insufficient Liquid Assets	
+
+Addition to RWE as per supervisiory review (3%)	675,300,725	
+
+Add: 2% Capital Charge according to New Capital	
+
+Adequacy Framework as per 6.4a7	218,700,000	
+
+Total Risk Weighted Exposures	23,404,024,889	
+
+5 Total Capital Fund	2,862,010,816	
+
+6 Capital Fund to Risk Weighted Exposure	12.23	
+
+Amount of Non Performing Loan (Gross and Net)	
+
+S. NO.	Loan Type	Gross Amount	Provision	Net Amount	
+
+1 Restructure/Reschedule Loan	
+
+2 Substandard Loan	23,467,414	5,866,853	17,600,560	
+
+3 Doubtful Loan	408,422,285	204,211,142	204,211,142	
+
+4 Loss Loan	349,166,251	349,166,251	-	
+
+NPA Ratios	
+
+S. NO.	Particulars	(%)	
+
+1 Gross NPAs to Gross Advances	
+
+2 Net NPAs to Net Advances	
+
+Movement of Non Performing Assets	
+
+
+Additional /	
+
+S. NO.	Particular	Previous Quarter	Current Quarter	(Write back)	
+
+1 Non Performing Loans	953,767,966|	781,055,950	(172,712,016)	
+
+Write Off of Loan and Interest Suspense	
+
+S. NO.	Particular	Amount	
+
+1 Loan Write Off	
+
+2 Interest Suspense Write Off	
+
+Movement of Loan Loss Provision and Interest Suspense	
+
+S. NO.	Particular	Previous Quarter	Current Quarter	Additional	
+
+1 Loan Loss Provision	764,346,780	752,631,577	(11,715,204)	
+
+2 Interest Suspense	282,980,607	249,449,730	(33,530,877)	
+
+i. Details of additional loan loss provision	
+
+Current year's amount in Rs.	
+
+S.N.	Loan Classification	Additional Provision	
+
+1 Good	16,373,564	
+
+2 Restructured / Rescheduled	(325,748)	
+
+3 Substandard	(4,932,854)	
+
+4 Doubtful	148,904,277	
+
+5 Loss	105,624,294	
+
+Total	265,643,534	
+
+j. Segregation of investment portfolio	
+
+Amount in Rs.	
+
+S.N.	Investment category	Current Year	
+
+1 Held for trading	4.121.206,587	
+
+2 Held to maturity	
+
+3 Available for sale	13,935,500	
+
+Total	4,135,142,087	
+
+Bank's internal approach to assess capital adequacy	
+
+Bank's management regularly reviews Bank's capital adequacy. Plans and budgets are	
+
+prepared on the basis of current and projected capital adequacy. Bank's plan and	
+
+investment decision is based on at what level of capital adequacy it wants to remain at.	
+
+Risk Management Function	
+
+
+Risk Assessment/Mitigation Practices at Kumari Bank Limited	
+
+Considering the need to establish effective Risk Management and Risk Mitigation	
+
+practices at Kumari Bank Ltd, we have developed a system of continuous improvement	
+
+of processes wherein each member of the Bank works towards balancing profitability	
+
+with prudence. The system encompasses all banking functions from client interface, to	
+
+back office operation, to the strategic decision formulated by the management	
+
+committees and the Board of Directors. Each area has its own check and balance	
+
+procedure to assess and mitigate risks involved. The practices thus observed are as	
+
+follows:	
+
+KBL Organization Structure	
+
+The bank's lending approval authority is divided into two distinct units, namely	
+
+Business and Risk Management. While the Business Unit concentrates more on	
+
+optimum utility of assets, every lending decision of this Unit is re-assessed and	
+
+revaluated by the Risk Management Unit for final approval. The Risk Management Unit	
+
+applies its objective judgment on risk variables deemed appropriate in each instance of	
+
+lending decision. For this purpose, the Risk Management Unit has two distinct subunits,	
+
+the Risk Approval Department, which facilities final lending decision after duly	
+
+adjusting risks as mitigated to an acceptable level, and the Credit Administration and	
+
+Control Department, which evaluates the endorsed paperwork prior to actual sanction,	
+
+and also after it.	
+
+Depending upon the volume of loans and the nature of risk associated, lending decision	
+
+are subject to validation and approval by various levels of the hierarchy, in which some	
+
+lending decision are to be approved by the General Manager, and other by even the	
+
+Board of Directors as each case may require.	
+
+Risk Measurement Criteria and Mitigation Process	
+
+Credit risks are evaluated from the initial customer interface on an array of risk variables	
+
+by the Credit Policy Guidelines of the Bank, as well as on the individual intuition of	
+
+experienced officers. As proposals are escalated for approval, judgmental and analytical	
+
+criteria become broader and more conceptual.	
+
+Kumari Bank Ltd. uses the best practices in banking, to make its operation secure	
+
+through a system of procedural crosschecking mechanism in each operational	
+
+transaction. An Internal Audit Department, which also doubles as the Concurrent Audit	
+
+Department system, continuously functions to alert bank personnel to the	
+
+meticulousness required in handling operations in every functional department. A credit	
+
+monitoring system is well established in the Bank, which periodically checks on credit	
+
+quality, compliance, and level of risk exposure. This practice has created a continuous	
+
+learning and improvement environment, and the Bank's efficiency goal has been to	
+
+move towards the most prudent practices in the industry.	
+
+Types of eligible credit risk mitigants used and the benefits availed under CRM -	
+
+Particular	Eligible CRM	
+
+Deposit with Bank & Cash Margin	469,915,900	
+
+Total	469,915,900	
+
