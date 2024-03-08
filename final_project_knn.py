@@ -1,15 +1,15 @@
 import pandas as pd
-from final_project_create_model_using_knn import get_nearest_datasets
+from final_project_create_model_using_knn import get_nearest_datasets_1
 import numpy as np
 from final_project_4d_z_score import get_values_for_variable_bank_quarter
-from final_project_create_model_using_knn import load_knn_model
+from final_project_create_model_using_knn import load_knn_model_1
 
 
 
 
 def get_column_data(filename, knnfile):
     result_dict = {}  # Initialize the dictionary to store the results
-    knn_model, all_values, all_indices = load_knn_model(knnfile)
+    knn_model, all_values, all_indices = load_knn_model_1(knnfile)
     # Read the CSV file
     df = pd.read_csv(filename, index_col=0)
 
@@ -24,10 +24,10 @@ def get_column_data(filename, knnfile):
         "cost of fund",
         "base rate",
         "net interest spread",
-        "return on equity",
-        "return on total assets",
+
+
         "credit to deposit ratio",
-        "debt ratio",
+
         "return on investment",
         "net profit margin",
     ]
@@ -45,7 +45,7 @@ def get_column_data(filename, knnfile):
                 numeric_value = pd.to_numeric(value, errors='coerce')
                 column_array[var_index] = numeric_value
 
-        nearest_dataset=get_nearest_datasets(knn_model, np.array(column_array), all_values, all_indices)
+        nearest_dataset=get_nearest_datasets_1(knn_model, np.array(column_array), all_values, all_indices)
 
         # Format the nearest datasets as per the desired JSON structure
         result_dict[column] = {}
@@ -57,4 +57,4 @@ def get_column_data(filename, knnfile):
             }
     return result_dict
 
-
+#get_column_data(filename='D:/python tesseract/z outp/z output/merged_file.csv',knnfile='D:/python tesseract/knn_model_data.pkl')

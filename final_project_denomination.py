@@ -53,7 +53,7 @@ def manage_denomination(folder_path):
         "total assets", "loan and advancements", "interest income", "interest expense", "net interest income",
         "net fee and commission income", "total operating income", "staff expenses", "operating profit",
         "non operating income expense", "profit for the period", "current tax liabilities","loan and advances to b/fis","loans and advances to customers",
-                        "deferred tax liabilities","non operating income","non operating expense",""
+                        "deferred tax liabilities","non operating income","non operating expense"
     ]:
                         numeric_value = pd.to_numeric(df.loc[index, column], errors='coerce')
                         print('numeric value =' ,numeric_value)

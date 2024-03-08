@@ -39,6 +39,7 @@ def display_value_for_variable_bank_quarter(datafile, variable, bank, quarter):
         # Use loc to access data for the specified variable, bank, and quarter
         result = df.loc[(variable, bank), quarter]
         print(result)
+        return result
     except KeyError:
         print(f"Data not found for variable: {variable}, bank: {bank}, and quarter: {quarter}")
 
@@ -78,4 +79,5 @@ def display_all_quarters_for_bank_and_variable(datafile, bank, variable):
     except KeyError:
         print(f"Data not found for bank: {bank} and variable: {variable}")
 
-#print(display_all_banks_for_quarter_and_variable(datafile='D:/python tesseract/3d data/data_cube.csv',variable='reserves',quarter='Q1 2073'))
+
+#print(display_value_for_variable_bank_quarter(datafile='D:/python tesseract/3d data/data_cube.csv',variable='reserves',quarter='Q3 2078',bank='Civil Bank'))

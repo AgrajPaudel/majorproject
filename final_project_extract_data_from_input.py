@@ -67,6 +67,43 @@ def get_values_for_quarter(datafile, quarter):
         print(f"Data not found for quarter: {quarter}")
         return np.nan
 
+
+def get_values_for_quarter_and_variable(datafile, quarter,variable):
+    try:
+        # Read the data cube CSV file
+        df = pd.read_csv(datafile, index_col=0)
+
+        # Use loc to access data for the specified variable and quarter
+        result = df.loc[variable, quarter]
+
+        # Handle numeric values directly
+        if pd.api.types.is_numeric_dtype(result):
+            # Convert to dictionary with variable as key and value as value
+            result_dict = result
+        else:
+
+            # Remove empty data
+            if str(result).strip() == '' or str(result).strip() == '-' or pd.isna(str(result)):
+                result = np.nan
+
+            print(result)
+            # Convert string data to numeric
+            result = pd.to_numeric(result, errors='coerce')
+
+            # Convert to dictionary with variable as key and value as value
+            result_dict = result
+
+        # Convert to a list of dictionaries
+
+
+
+        return result_dict
+    except FileNotFoundError:
+        raise FileNotFoundError(f"Data file not found: {datafile}")
+    except KeyError:
+        print(f"Data not found for quarter: {quarter}")
+        return np.nan
+
 #print(get_values_for_quarter(datafile='D:/python tesseract/z outp/z output/merged_file.csv',quarter='Q1 2072'))
 #print(display_all_quarters_for_variable(datafile='D:/python tesseract/z outp/z output/merged_file.csv',variable='reserves'))
 

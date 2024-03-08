@@ -188,7 +188,7 @@ def risk_analysis(datafile, quarter, bank):
                              loan_to_deposit_ratio=loan_to_deposit_ratio[i],
                              )
 
-        risk=(risk-min[i])/(max[i]-min[i])*2-1
+        risk = [round(num) for num in risk]
         risk_array.append(risk)
         i=i+1
 
@@ -301,7 +301,7 @@ def risk_analysis_from_inputs(datafile, quarter):
                              staff_expense_to_income_ratio=staff_expense_to_income_ratio[i],
                              loan_to_deposit_ratio=loan_to_deposit_ratio[i],
                              )
-        risk = (risk - min[i]) / (max[i] - min[i]) * 2 - 1
+        risk=[round(num) for num in risk]
         risk_array.append(risk)
         i=i+1
 
